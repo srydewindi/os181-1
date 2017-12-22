@@ -437,7 +437,7 @@ Copyright (C) 2012 Free Software Foundation, Inc.
 This config.status script is free software; the Free Software Foundation
 gives unlimited permission to copy, distribute and modify it."
 
-ac_pwd='/home/demo/git/demo/demos/week09-File-Storage-System/fuse-tutorial-2017-10-03'
+ac_pwd='/home/demo/git/os181/demos/week09-File-Storage-System/fuse-tutorial-2017-10-03'
 srcdir='.'
 INSTALL='/usr/bin/install -c'
 MKDIR_P='/bin/mkdir -p'
@@ -659,12 +659,12 @@ S["mkdir_p"]="$(MKDIR_P)"
 S["MKDIR_P"]="/bin/mkdir -p"
 S["INSTALL_STRIP_PROGRAM"]="$(install_sh) -c -s"
 S["STRIP"]=""
-S["install_sh"]="${SHELL} /home/demo/git/demo/demos/week09-File-Storage-System/fuse-tutorial-2017-10-03/install-sh"
-S["MAKEINFO"]="${SHELL} /home/demo/git/demo/demos/week09-File-Storage-System/fuse-tutorial-2017-10-03/missing makeinfo"
-S["AUTOHEADER"]="${SHELL} /home/demo/git/demo/demos/week09-File-Storage-System/fuse-tutorial-2017-10-03/missing autoheader"
-S["AUTOMAKE"]="${SHELL} /home/demo/git/demo/demos/week09-File-Storage-System/fuse-tutorial-2017-10-03/missing automake-1.15"
-S["AUTOCONF"]="${SHELL} /home/demo/git/demo/demos/week09-File-Storage-System/fuse-tutorial-2017-10-03/missing autoconf"
-S["ACLOCAL"]="${SHELL} /home/demo/git/demo/demos/week09-File-Storage-System/fuse-tutorial-2017-10-03/missing aclocal-1.15"
+S["install_sh"]="${SHELL} /home/demo/git/os181/demos/week09-File-Storage-System/fuse-tutorial-2017-10-03/install-sh"
+S["MAKEINFO"]="${SHELL} /home/demo/git/os181/demos/week09-File-Storage-System/fuse-tutorial-2017-10-03/missing makeinfo"
+S["AUTOHEADER"]="${SHELL} /home/demo/git/os181/demos/week09-File-Storage-System/fuse-tutorial-2017-10-03/missing autoheader"
+S["AUTOMAKE"]="${SHELL} /home/demo/git/os181/demos/week09-File-Storage-System/fuse-tutorial-2017-10-03/missing automake-1.15"
+S["AUTOCONF"]="${SHELL} /home/demo/git/os181/demos/week09-File-Storage-System/fuse-tutorial-2017-10-03/missing autoconf"
+S["ACLOCAL"]="${SHELL} /home/demo/git/os181/demos/week09-File-Storage-System/fuse-tutorial-2017-10-03/missing aclocal-1.15"
 S["VERSION"]="2017-10-03"
 S["PACKAGE"]="fuse-tutorial"
 S["CYGPATH_W"]="echo"

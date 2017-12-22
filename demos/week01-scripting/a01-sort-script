@@ -1,5 +1,5 @@
 #!/bin/bash
-# REV07: Mon Sep 11 14:37:18 WIB 2017
+# REV08: Fri Dec 22 18:19:56 WIB 2017
 # REV01: Mon Jun 26 21:48:52 WIB 2017
 # START: Mon Feb 13 20:22:22 WIB 2017
 
@@ -10,10 +10,10 @@
 # that it will be useful, but WITHOUT ANY WARRANTY; without even the implied 
 # warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-echo "============================="
-echo "bash .shsh    for reset"
-echo "bash .shsh xx for total reset"
-echo "============================="
+echo "======================================="
+echo "bash a01-sort-script    for reset"
+echo "bash a01-sort-script xx for total reset"
+echo "======================================="
 
 touch "0000000-DUMMY"
 FILES=`ls`

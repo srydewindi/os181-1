@@ -1,5 +1,5 @@
 #!/bin/bash
-# REV05: Mon Sep 11 15:27:15 WIB 2017
+# REV06: Fri Dec 22 18:22:04 WIB 2017
 # START: Mon Sep  5 11:12:35 WIB 2016
 
 # These are some command lines 
@@ -49,7 +49,7 @@ do
     echo $COMMENT
     echo "$STR"
     eval $II
-    echo ""; echo "*** Hit Anykey ***";
+    echo ""; echo "*** Hit Enter Key ***";
     [ "$1" = "$XX" ] || (read YY ; clear)
 done
 

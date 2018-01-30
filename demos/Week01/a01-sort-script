@@ -13,6 +13,8 @@
 echo "======================================="
 echo "bash a01-sort-script    for reset"
 echo "bash a01-sort-script xx for total reset"
+echo "Do also:"
+echo "bash a02-README"
 echo "======================================="
 
 TMPHEAD="ZTMP"
@@ -56,8 +58,6 @@ for FF in ${TMPHEAD}* ; do
    chmod 755 $NEWNAME
 done
 chmod 644 ${HEAD}*
-
-exit 
 
 rm -rf $TESTDIR1 $TESTDIR2 $TMPFILE*
 

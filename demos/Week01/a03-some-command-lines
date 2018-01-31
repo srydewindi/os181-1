@@ -1,14 +1,25 @@
 #!/bin/bash
-# REV06: Fri Dec 22 18:22:04 WIB 2017
+# REV07: Wed Jan 31 18:18:29 WIB 2018
 # START: Mon Sep  5 11:12:35 WIB 2016
 
+# Just run: bash a03-some-command-lines
+
 # These are some command lines 
-# Copyright (C) 2016-2017 http://RahmatM.Samik-Ibrahim.vLSM.org/
+# Copyright (C) 2016-2018 http://RahmatM.Samik-Ibrahim.vLSM.org/
 # This program is free script/software. This program is distributed in the hope 
 # that it will be useful, but WITHOUT ANY WARRANTY; without even the implied 
 # warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 XX="xx"
+TESTDIR1=".TESTFROM"
+TESTDIR2=".TESTBACKUP"
+
+[ -d $TESTDIR1 ] && [ -d $TESTDIR2] || {
+   echo ""; echo "No $TESTDIR1 or $TESTDIR2."
+   echo "Please run script \"a01-sort-script\" first!"; echo ""
+   exit
+}
+
 clear
 
 for II in      \

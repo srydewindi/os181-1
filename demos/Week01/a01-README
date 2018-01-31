@@ -2,7 +2,7 @@
 # REV00: Wed Jan 31 18:17:10 WIB 2018
 # START: Tue Jan 30 19:50:17 WIB 2018
 
-# README: just run  "bash a02-README"
+# ZCZCREADME: just run  "bash a01-README"
 
 # Copyright (C) 2018 Rahmat M. Samik-Ibrahim
 # http://RahmatM.Samik-Ibrahim.vLSM.org/
@@ -11,6 +11,7 @@
 # warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 XX="xx"
+HEAD="a"
 
 clear
 echo ""; echo "For README, just run: \"bash $0\""
@@ -57,10 +58,20 @@ cat - << NNNN
 ================================================================================
 This is a README file for this demo.
 
-
 RMS 2018-Jan-31
 ================================================================================
 NNNN
+
+[ "$1" = "$XX" ] || (read YY)
+
+PREFIX="ZCZCREADME:"
+
+for II in ${HEAD}* ; do
+   echo -n "${II}: "
+   if !  grep ${PREFIX} $II ; then
+      echo ""
+   fi
+done
 
 exit
 

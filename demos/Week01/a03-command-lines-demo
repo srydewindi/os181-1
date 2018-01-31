@@ -13,10 +13,11 @@
 XX="xx"
 TESTDIR1=".TESTFROM"
 TESTDIR2=".TESTBACKUP"
+TMPFILE=".thisfile.tx"
 
-[ -d $TESTDIR1 ] && [ -d $TESTDIR2] || {
-   echo ""; echo "No $TESTDIR1 or $TESTDIR2."
-   echo "Please run script \"a01-sort-script\" first!"; echo ""
+[ -d $TESTDIR1 ] && [ -d $TESTDIR2 ] && [ -f $TMPFILE ] || {
+   echo ""; echo "No $TESTDIR1 or $TESTDIR2 or $TMPFILE."
+   echo "Please run script \"a02-sort-n-prepare\" first!"; echo ""
    exit
 }
 

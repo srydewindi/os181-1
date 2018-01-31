@@ -3,7 +3,7 @@
 # REV01: Mon Jun 26 21:48:52 WIB 2017
 # START: Mon Feb 13 20:22:22 WIB 2017
 
-# This script is sorting script files
+# ZCZCREADME:  This script is sorting files and preparing the demo.
 
 # Copyright (C) 2017-2018 http://RahmatM.Samik-Ibrahim.vLSM.org/
 # This program is free script/software. This program is distributed in the hope 
@@ -18,9 +18,10 @@ echo "bash $0 xx (... for total reset)"
 echo "Check and compare with:"
 echo "ls -al"
 echo "Do also:"
-echo "bash a02-README"
+echo "bash a01-README"
 echo "================================================="
 
+HEAD="a" 
 TMPHEAD="ZTMP"
 START="0"
 TMPSEQ="1000"
@@ -35,7 +36,6 @@ FILE3="$TESTDIR1/80x23.txt"
 DEL="xx"
 
 # check is "aXX-XXXXX" files exist.
-HEAD="a" 
 for FF in ${HEAD}* ; do
    [ -e $FF ] && {
       NFILES=`ls ${HEAD}* | wc -l`

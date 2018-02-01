@@ -2,7 +2,7 @@
 # REV00: Wed Jan 31 18:17:10 WIB 2018
 # START: Tue Jan 30 19:50:17 WIB 2018
 
-# ZCZCREADME: just run  "bash a01-README"
+# R: Just run "bash a01-README"
 
 # Copyright (C) 2018 Rahmat M. Samik-Ibrahim
 # http://RahmatM.Samik-Ibrahim.vLSM.org/
@@ -47,7 +47,7 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 NNNN
 
 [ "$1" = "$XX" ] || (read YY)
-echo ""; echo "Directory listing (running \"ls -AF\":"
+echo ""; echo "Directory listing (running \"ls -AF\"):"
 echo "================================================================================"
 ls -AF
 echo "================================================================================"
@@ -58,18 +58,19 @@ cat - << NNNN
 ================================================================================
 This is a README file for this demo.
 
-RMS 2018-Jan-31
+Rahmat M. Samik-Ibrahim
 ================================================================================
 NNNN
 
 [ "$1" = "$XX" ] || (read YY)
 
-PREFIX="ZCZCREADME:"
+PREFIX="^#.R:"
 
+echo ""; echo "[LISTING THE] # R: LINES ===================="
 for II in ${HEAD}* ; do
-   echo -n "${II}: "
-   if !  grep ${PREFIX} $II ; then
-      echo ""
+   RESULT=`grep $PREFIX $II`
+   if [[ $RESULT ]] ; then
+      printf "[%10s]: %s\n" "`cut -c 1-10 <<< $II`" "$RESULT"
    fi
 done
 

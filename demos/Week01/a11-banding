@@ -1,9 +1,9 @@
 #!/bin/bash
-# REV06 Mon Feb 12 13:04:48 WIB 2018
+# REV06 Mon Feb 12 19:52:23 WIB 2018
 # REV04 Mon Sep 11 14:51:36 WIB 2017
 # START Xxx Xxx XX XX:XX:XX XXX 2009
 
-# R: Just run "bash a09-banding"
+# R: Compare (banding) .TESTFROM/ and .TESTBACKUP. Run "bash a11-banding"
 
 # Copyright (C)2009-2018 Rahmat M. Samik-Ibrahim
 # http://RahmatM.Samik-Ibrahim.vLSM.org/

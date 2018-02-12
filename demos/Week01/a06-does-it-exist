@@ -1,8 +1,8 @@
 #!/bin/bash
-# REV03: Mon Feb 12 12:55:26 WIB 2018
+# REV03: Mon Feb 12 19:49:34 WIB 2018
 # START: Mon Sep  4 16:42:56 WIB 2017
 
-# R: Does ".thisfile.txt" exists? Run "bash a04-does-it-exist"
+# R: Does ".thisfile.txt" exists? Run "bash a06-does-it-exist"
 
 # Copyright (C)2017-2018 Rahmat M. Samik-Ibrahim
 # http://RahmatM.Samik-Ibrahim.vLSM.org/

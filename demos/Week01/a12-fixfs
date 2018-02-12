@@ -1,5 +1,5 @@
 #!/bin/bash
-# REV06: Mon Feb 12 13:06:19 WIB 2018
+# REV06: Mon Feb 12 19:53:10 WIB 2018
 # REV05: Fri Sep  8 20:48:24 WIB 2017
 # START: Thu Dec 19 00:00:00 WIB 2013
 
@@ -9,7 +9,7 @@
 # that it will be useful, but WITHOUT ANY WARRANTY; without even the implied 
 # warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-# R: fixfs: fixing file systems' name and mode. Run "bash a10-fixfs"
+# R: fixfs: fixing file systems name and mode. Run "bash a12-fixfs"
 
 # Add escape \"
 # Replacing all funny and white characters with a dash (-).

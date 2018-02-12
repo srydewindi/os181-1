@@ -66,7 +66,7 @@ NNNN
 
 PREFIX="^#.R:"
 
-echo ""; echo "[LISTING THE] # R: LINES ===================="
+echo ""; echo "[-----------]: # R: LISTING THE LINES =====     =====     ======================"
 for II in ${HEAD}* ; do
    RESULT=`grep $PREFIX $II`
    if [[ $RESULT ]] ; then

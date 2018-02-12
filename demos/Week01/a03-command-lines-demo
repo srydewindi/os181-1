@@ -1,8 +1,8 @@
 #!/bin/bash
-# REV07: Wed Jan 31 18:18:29 WIB 2018
+# REV08: Mon Feb 12 12:25:51 WIB 2018
 # START: Mon Sep  5 11:12:35 WIB 2016
 
-# Just run: bash a03-some-command-lines
+# R: These are collections of command lines. Run "bash a03-command-lines-demo 11 22 33 44 55"
 
 # These are some command lines 
 # Copyright (C) 2016-2018 http://RahmatM.Samik-Ibrahim.vLSM.org/
@@ -21,7 +21,10 @@ TMPFILE=".thisfile.tx"
    exit
 }
 
-clear
+echo ""; echo "These are collections of command lines."
+echo "Just run: \"bash a03-command-lines-demo 11 22 33 44 55\""
+echo ""; echo "*** Hit Enter Key ***";
+[ "$1" = "$XX" ] || (read YY ; clear)
 
 for II in      \
    'ls'        \

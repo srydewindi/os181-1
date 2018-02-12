@@ -74,7 +74,7 @@ done
 chmod 644 ${HEAD}*
 
 # Cleaning
-rm -rf $TESTDIR1 $TESTDIR2 $TMPFILE*
+rm -rf $TESTDIR1 $TESTDIR2 $TMPFILE* .txt
 
 [ "$1" = "$DEL" ] && exit 0
 

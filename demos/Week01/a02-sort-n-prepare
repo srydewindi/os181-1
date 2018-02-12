@@ -1,9 +1,10 @@
 #!/bin/bash
-# REV10: Wed Jan 31 17:57:21 WIB 2018
+# REV11: Mon Feb 12 12:58:41 WIB 2018
 # REV01: Mon Jun 26 21:48:52 WIB 2017
 # START: Mon Feb 13 20:22:22 WIB 2017
 
 # R: This script is sorting files and preparing the demo.
+# Just run "bash a02-sort-n-prepare"
 
 # Copyright (C) 2017-2018 http://RahmatM.Samik-Ibrahim.vLSM.org/
 # This program is free script/software. This program is distributed in the hope 

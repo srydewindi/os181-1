@@ -1,10 +1,10 @@
 #!/bin/bash
-# REV02: Fri Sep  8 22:01:38 WIB 2017
+# REV03: Mon Feb 12 12:55:26 WIB 2018
 # START: Mon Sep  4 16:42:56 WIB 2017
 
-# Does ".thisfile.txt" exists?
+# R: Does ".thisfile.txt" exists? Run "bash a04-does-it-exist"
 
-# Copyright (C)2017 Rahmat M. Samik-Ibrahim
+# Copyright (C)2017-2018 Rahmat M. Samik-Ibrahim
 # http://RahmatM.Samik-Ibrahim.vLSM.org/
 # This program is free script/software. This program is distributed in the hope 
 # that it will be useful, but WITHOUT ANY WARRANTY; without even the implied 

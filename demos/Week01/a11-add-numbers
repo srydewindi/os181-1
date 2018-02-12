@@ -1,16 +1,17 @@
 #!/bin/bash
+# REV03: Mon Feb 12 13:08:14 WIB 2018
 # REV02: Fri Sep  8 21:58:04 WIB 2017
 # START: Mon Sep  5 14:44:23 WIB 2016
 
-# 
+# R: Just run "bash a11-add-numbers"
+# Add line numbers to a file.
+# $ 12-add-number filename.txt
 
-# Copyright (C) 2016-2017 Rahmat M. Samik-Ibrahim 
+# Copyright (C) 2016-2018 Rahmat M. Samik-Ibrahim 
 # http://RahmatM.Samik-Ibrahim.vLSM.org/
 # This program is free script/software. This program is distributed in the hope 
 # that it will be useful, but WITHOUT ANY WARRANTY; without even the implied 
 # warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-# Add line numbers to a file.
-# $ 12-add-number filename.txt
 
 [ -f $1 ]  || {
    echo "$1: does not exist"
@@ -26,3 +27,4 @@ BEGIN {
 }' $1 > $1.txt
 
 exit
+

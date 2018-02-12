@@ -1,5 +1,5 @@
 #!/bin/bash
-# REV00: Wed Jan 31 18:17:10 WIB 2018
+# REV01: Mon Feb 12 12:19:21 WIB 2018
 # START: Tue Jan 30 19:50:17 WIB 2018
 
 # R: Just run "bash a01-README"
@@ -43,7 +43,7 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
          10        20        30        40        50        60        70       79
 12345678911234567892123456789312345678941234567895123456789612345678971234567898
-23 END                                     =====    H I T   R E T U R N    =====
+23 END                                =====    H I T   E N T E R   K E Y   =====
 NNNN
 
 [ "$1" = "$XX" ] || (read YY)
@@ -70,7 +70,7 @@ echo ""; echo "[LISTING THE] # R: LINES ===================="
 for II in ${HEAD}* ; do
    RESULT=`grep $PREFIX $II`
    if [[ $RESULT ]] ; then
-      printf "[%10s]: %s\n" "`cut -c 1-10 <<< $II`" "$RESULT"
+      printf "[%11s]: %s\n" "`cut -c 1-11 <<< $II`" "$RESULT"
    fi
 done
 

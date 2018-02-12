@@ -13,8 +13,12 @@
 XX="xx"
 HEAD="a"
 
-clear
-echo ""; echo "For README, just run: \"bash $0\""
+PREFIX="^#.R:"
+RESULT=`grep $PREFIX $0`
+if [[ $RESULT ]] ; then
+   printf "\n[%11s]: %s\n" "`cut -c 1-11 <<< $0`" "$RESULT"
+fi
+echo ""; 
 echo "Is this screen size at least \"80 x 23\" characters?"
 echo "RESIZE the screen if this following message does not fit in \"80 x 23\""
 echo ""; echo "*** Hit Enter Key ***";
@@ -64,9 +68,7 @@ NNNN
 
 [ "$1" = "$XX" ] || (read YY)
 
-PREFIX="^#.R:"
-
-echo ""; echo "[-----------]: # R: LISTING THE LINES =====     =====     ======================"
+echo ""; echo "[-----------]: # R: LISTING THE LINES ========  ==  ==  ==  ==  ==  ==  ========"
 for II in ${HEAD}* ; do
    RESULT=`grep $PREFIX $II`
    if [[ $RESULT ]] ; then

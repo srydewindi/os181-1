@@ -10,14 +10,22 @@
 # that it will be useful, but WITHOUT ANY WARRANTY; without even the implied 
 # warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-FILE=".thisfile.txt"
+PREFIX="^#.R:"
+RESULT=`grep $PREFIX $0`
+clear
+if [[ $RESULT ]] ; then
+   printf "\n[%11s]: %s\n" "`cut -c 1-11 <<< $0`" "$RESULT"
+fi
+echo ""; 
 
+FILE=".thisfile.txt"
 [ -f $FILE ] && {
   echo "$FILE EXISTS!"
 }
 [ -f $FILE ] || {
   echo "$FILE does not EXISTS!"
 }
+echo ""
 
 exit
 

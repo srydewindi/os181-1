@@ -1,0 +1,32 @@
+DO NOT work inside this folder!
+You should copy this folder to your own working folder.
+
+Folder Name:
+Week01/
+
+File Listing:
+* 1-READ-THIS-FIRST.txt (this file)
+
+* c-program-example.c (a c program)
+  To compile:
+  $ gcc -o c-program-example c-program-example.c
+  To execute:
+  $ ./c-program-example
+
+* Makefile (a Makefile)
+  Just run:
+  $ make
+
+* QR-Code.docx and QR-Code.pdf
+  A MEMO example.
+
+===================================
+REV00: Tue Feb 20 09:12:43 WIB 2018
+START: Tue Feb 20 09:12:43 WIB 2018
+
+# Copyright (C) 2018 Rahmat M. Samik-Ibrahim
+# http://RahmatM.Samik-Ibrahim.vLSM.org/
+# This program is free script/software. This program is distributed in the hope 
+# that it will be useful, but WITHOUT ANY WARRANTY; without even the implied 
+# warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+

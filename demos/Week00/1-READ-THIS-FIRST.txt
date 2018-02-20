@@ -21,7 +21,7 @@ File Listing:
   A MEMO example.
 
 ===================================
-REV00: Tue Feb 20 09:12:43 WIB 2018
+REV00: Tue Feb 20 09:26:50 WIB 2018
 START: Tue Feb 20 09:12:43 WIB 2018
 
 # Copyright (C) 2018 Rahmat M. Samik-Ibrahim

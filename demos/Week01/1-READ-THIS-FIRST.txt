@@ -2,7 +2,7 @@ DO NOT work inside this folder!
 You should copy this folder to your own working folder.
 
 Folder Name:
-Week02/
+Week01/
 
 File Listing:
 * 1-READ-THIS-FIRST.txt (this file)
@@ -20,7 +20,7 @@ File Listing:
 * a12-fixfs
 
 ===================================
-REV00: Tue Feb 20 09:12:43 WIB 2018
+REV00: Tue Feb 20 09:27:13 WIB 2018
 START: Tue Feb 20 09:12:43 WIB 2018
 
 # Copyright (C) 2018 Rahmat M. Samik-Ibrahim

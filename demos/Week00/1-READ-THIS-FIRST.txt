@@ -2,7 +2,7 @@ DO NOT work inside this folder!
 You should copy this folder to your own working folder.
 
 Folder Name:
-Week01/
+Week00/
 
 File Listing:
 * 1-READ-THIS-FIRST.txt (this file)

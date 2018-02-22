@@ -1,8 +1,15 @@
 DO NOT work inside this folder!
 You should copy this folder to your own working folder.
+This demo is available in badak:///extra/.
+See also: https://github.com/UI-FASILKOM-OS/os181.
+=======================================================
 
 Folder Name:
 Week01/
+
+To copy the folder to your home directory:
+cp -r /extra/Week01/W01-demos/ W01-demos/
+=======================================================
 
 File Listing:
 * 1-READ-THIS-FIRST.txt (this file)
@@ -19,8 +26,15 @@ File Listing:
 * a11-banding
 * a12-fixfs
 
+=======================================================
+
+Use "bash" to run each script. Eg.
+   bash a01-READ-ME
+   bash a02-sort-n-prepare
+   bash a03-command-lines-demo 11 22 33 44 55
+
 ===================================
-REV00: Tue Feb 20 09:27:13 WIB 2018
+REV01: Thu Feb 22 09:17:23 WIB 2018
 START: Tue Feb 20 09:12:43 WIB 2018
 
 # Copyright (C) 2018 Rahmat M. Samik-Ibrahim

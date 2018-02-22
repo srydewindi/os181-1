@@ -1,5 +1,5 @@
 #!/bin/bash
-# REV06 Mon Feb 12 19:52:23 WIB 2018
+# REV07 Thu Feb 22 09:20:28 WIB 2018
 # REV04 Mon Sep 11 14:51:36 WIB 2017
 # START Xxx Xxx XX XX:XX:XX XXX 2009
 
@@ -21,8 +21,8 @@ APA="apa"
 XX="xx"
 DATE=`date`
 
-ROPT1="-aucv --delete --backup --backup-dir=/tmp/BAK1-rsync/"
-ROPT2="-aucv --delete --backup --backup-dir=/tmp/BAK2-rsync/"
+ROPT1="-aucv --delete --backup --backup-dir=/tmp/BAK1-rsync-$$/"
+ROPT2="-aucv --delete --backup --backup-dir=/tmp/BAK2-rsync-$$/"
 
 STAMP1="${DIR1}.XSTAMP1"
 STAMP2="${DIR2}.XSTAMP2"

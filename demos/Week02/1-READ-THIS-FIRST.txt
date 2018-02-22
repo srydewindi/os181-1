@@ -1,8 +1,15 @@
 DO NOT work inside this folder!
 You should copy this folder to your own working folder.
+This demo is available in badak:///extra/.
+See also: https://github.com/UI-FASILKOM-OS/os181.
+=======================================================
 
 Folder Name:
 Week02/
+
+To copy the folder to your home directory:
+cp -r /extra/Week02/W02-demos/ W02-demos/
+=======================================================
 
 File Listing:
 * 1-READ-THIS-FIRST.txt (this file)
@@ -13,8 +20,13 @@ File Listing:
 * permissions/
   Permission mode demo
 
+
+=======================================================
+To list files, run:  ls -al
+To compile the “.c” files, run make
+
 ===================================
-REV00: Tue Feb 20 09:28:05 WIB 2018
+REV02: Thu Feb 22 09:17:23 WIB 2018
 START: Tue Feb 20 09:12:43 WIB 2018
 
 # Copyright (C) 2018 Rahmat M. Samik-Ibrahim
@@ -22,4 +34,5 @@ START: Tue Feb 20 09:12:43 WIB 2018
 # This program is free script/software. This program is distributed in the hope 
 # that it will be useful, but WITHOUT ANY WARRANTY; without even the implied 
 # warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
 

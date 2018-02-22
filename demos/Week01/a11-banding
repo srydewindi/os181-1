@@ -1,5 +1,5 @@
 #!/bin/bash
-# REV07 Thu Feb 22 09:20:28 WIB 2018
+# REV08 Thu Feb 22 09:33:01 WIB 2018
 # REV04 Mon Sep 11 14:51:36 WIB 2017
 # START Xxx Xxx XX XX:XX:XX XXX 2009
 
@@ -71,7 +71,7 @@ echo "banding xx:  togle naik/turun"
 [ $STAMP1 -nt $STAMP2 ] && {
     echo "START: TO TESTBACKUP (^^^^^ NAIK ^^^^^)"
     ls -al $STAMP1 $STAMP2
-    echo "READY?"
+    echo "READY? (HIT ENTER) -- "
     sync
     read dummy
     date

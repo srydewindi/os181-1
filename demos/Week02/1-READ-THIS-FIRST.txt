@@ -1,3 +1,4 @@
+exit 1
 DO NOT work inside this folder!
 You should copy this folder to your own working folder.
 This demo is available in badak:///extra/.
@@ -26,7 +27,7 @@ To list files, run:  ls -al
 To compile the “.c” files, run make
 
 ===================================
-REV02: Thu Feb 22 09:17:23 WIB 2018
+REV03: Mon Feb 26 20:34:47 WIB 2018
 START: Tue Feb 20 09:12:43 WIB 2018
 
 # Copyright (C) 2018 Rahmat M. Samik-Ibrahim

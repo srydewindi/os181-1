@@ -1,3 +1,4 @@
+exit
 DO NOT work inside this folder!
 You should copy this folder to your own working folder.
 This demo is available in badak:///extra/.
@@ -34,7 +35,7 @@ Use "bash" to run each script. Eg.
    bash a03-command-lines-demo 11 22 33 44 55
 
 ===================================
-REV01: Thu Feb 22 09:17:23 WIB 2018
+REV02: Mon Feb 26 20:34:01 WIB 2018
 START: Tue Feb 20 09:12:43 WIB 2018
 
 # Copyright (C) 2018 Rahmat M. Samik-Ibrahim

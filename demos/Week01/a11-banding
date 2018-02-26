@@ -1,5 +1,5 @@
 #!/bin/bash
-# REV08 Thu Feb 22 09:33:01 WIB 2018
+# REV09 Mon Feb 26 21:48:35 WIB 2018
 # REV04 Mon Sep 11 14:51:36 WIB 2017
 # START Xxx Xxx XX XX:XX:XX XXX 2009
 
@@ -14,8 +14,8 @@
 
 # Bandingkan isi FlashDisk dengan HardDisk
 
-DIR1=".TESTFROM/"
-DIR2=".TESTBACKUP/"
+DIR1="ZB-SOURCE/"
+DIR2="ZC-BACKUP/"
 
 APA="apa"
 XX="xx"

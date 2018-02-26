@@ -1,14 +1,13 @@
 #!/bin/bash
-# REV04: Mon Feb 12 19:48:55 WIB 2018
-# START: Mon Sep  5 14:38:26 WIB 2016
+# REV05: Mon Feb 26 21:39:10 WIB 2018
+# START: Mon Sep  5 14:34:41 WIB 2016
 
-# R: Just run "bash a05-tester"
+# R: Just run "bash a06-loop 11 22 33 44"
 
 # Copyright (C) 2016-2018 http://RahmatM.Samik-Ibrahim.vLSM.org/
 # This program is free script/software. This program is distributed in the hope 
 # that it will be useful, but WITHOUT ANY WARRANTY; without even the implied 
 # warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-
 
 PREFIX="^#.R:"
 RESULT=`grep $PREFIX $0`
@@ -18,19 +17,18 @@ if [[ $RESULT ]] ; then
 fi
 echo ""; 
 
-for II in .TESTFROM .thisfile.tx Nothing
+echo "============="
+echo 'Loop with [*]'
+for ii in "$*"
 do
-   echo "================================"
-   [ -f $II ] && echo "[$II] is a file"
-   [ -f $II ] || echo "[$II] is NOT a file"
-
-   if [ -d $II ] 
-      then echo "[$II] is a directory"
-   else 
-      echo "[$II] is NOT a directory"
-   fi
+   echo $ii
 done
-echo "================================"
 
-exit
+echo "=============="
+echo 'Loop with [@]'
+for ii in "$@"
+do
+   echo $ii
+done
+exit 0
 

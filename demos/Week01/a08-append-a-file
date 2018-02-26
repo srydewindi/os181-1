@@ -1,5 +1,5 @@
 #!/bin/bash
-# REV05: Mon Feb 12 19:50:11 WIB 2018
+# REV06: Mon Feb 26 21:43:05 WIB 2018
 # START: Mon Sep  5 14:28:02 WIB 2016
 
 # R: Just run "bash a08-append-a-file"
@@ -10,7 +10,7 @@
 # that it will be useful, but WITHOUT ANY WARRANTY; without even the implied 
 # warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-TMPFILE=".thisfile.txt"
+TMPFILE="ZA-thisfile.txt"
 
 PREFIX="^#.R:"
 RESULT=`grep $PREFIX $0`

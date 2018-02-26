@@ -15,26 +15,14 @@ cp -r /extra/Week03/W03-demos/ W03-demos/
 File Listing:
 * 1-READ-THIS-FIRST.txt
 * a1-sort-n-prepare
-* a2-some-command-lines
-* a3-80x23.txt
+* a2-some-systemd-command-lines
 
 =======================================================
-To see some 
+To see some "systemd" commands, run:
+bash a2-some-systemd-command-lines
 
-===================================
-REV03: Mon Feb 26 19:40:59 WIB 2018
-START: Tue Feb 20 09:12:43 WIB 2018
-
-# Copyright (C) 2018 Rahmat M. Samik-Ibrahim
-# http://RahmatM.Samik-Ibrahim.vLSM.org/
-# This program is free script/software. This program is distributed in the hope 
-# that it will be useful, but WITHOUT ANY WARRANTY; without even the implied 
-# warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-
-
-REV03 Thu Mar  2 09:44:42 WIB 2017
-START Tue Feb 28 09:04:13 WIB 2017 
-==================================
+=======================================================
+Some useful commands:
 
 ##########################################
 systemctl start [name.service]
@@ -60,4 +48,15 @@ journalctl -b
 REF:
 - https://www.youtube.com/watch?v=AtEqbYTLHfs
 - https://www.linux.com/learn/understanding-and-using-systemd
+
+
+===================================
+REV03: Mon Feb 26 19:40:59 WIB 2018
+START: Tue Feb 20 09:12:43 WIB 2018
+
+# Copyright (C) 2018 Rahmat M. Samik-Ibrahim 
+# http://RahmatM.Samik-Ibrahim.vLSM.org/
+# This free document is distributed in the hope that it will be 
+# useful, but WITHOUT ANY WARRANTY; without even the implied 
+# warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 

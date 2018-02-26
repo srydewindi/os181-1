@@ -17,10 +17,10 @@ File Listing:
 * a01-READ-ME
 * a02-sort-n-prepare
 * a03-command-lines-demo
-* a04-loop
-* a05-tester
-* a06-does-it-exist
-* a07-finding-EXIST
+* a04-does-it-exist
+* a05-finding-EXIST
+* a06-loop
+* a07-tester
 * a08-append-a-file
 * a09-add-numbers
 * a10-mysha1

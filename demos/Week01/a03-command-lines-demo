@@ -1,5 +1,5 @@
 #!/bin/bash
-# REV08: Mon Feb 12 12:25:51 WIB 2018
+# REV09: Mon Feb 26 21:08:50 WIB 2018
 # START: Mon Sep  5 11:12:35 WIB 2016
 
 # R: These are collections of command lines. Run "bash a03-command-lines-demo 11 22 33 44 55"
@@ -11,9 +11,9 @@
 # warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 XX="xx"
-TESTDIR1=".TESTFROM"
-TESTDIR2=".TESTBACKUP"
-TMPFILE=".thisfile.tx"
+TMPFILE="ZA-thisfile.tx"
+TESTDIR1="ZB-SOURCE"
+TESTDIR2="ZC-BACKUP"
 
 [ -d $TESTDIR1 ] && [ -d $TESTDIR2 ] && [ -f $TMPFILE ] || {
    echo ""; echo "No $TESTDIR1 or $TESTDIR2 or $TMPFILE."
@@ -22,7 +22,7 @@ TMPFILE=".thisfile.tx"
 }
 
 echo ""; echo "These are collections of command lines."
-echo "Just run: \"bash a03-command-lines-demo 11 22 33 44 55\""
+echo "Just run: \"bash $0 11 22 33 44 55\""
 echo ""; echo "*** Hit Enter Key ***";
 [ "$1" = "$XX" ] || (read YY ; clear)
 
@@ -30,14 +30,14 @@ for II in      \
    'ls'        \
    'ls -a'     \
    'ls -aF'    \
-   'ls -al | head -8 ; echo "(...)"; ls -al | tail -8' \
-   'ls -a .TESTFROM ; echo ":::::::::" ; ls -aF .TESTFROM'  \
-   'cat .TESTFROM/program2.c'                             \
-   'cd .TESTFROM ; cat file1.txt ; echo "::::" ; cat file2.txt ; cd ..' \
-   'cd .TESTFROM ; diff file1.txt file2.txt ; cd ..' \
-   'cd .TESTFROM ; sort file1.txt ; cd ..' \
-   'pushd .TESTFROM ; wc file1.txt ; wc -l file1.txt ; wc -c file1.txt;popd'\
-   'date' \
+   'ls -al | head -8 ; echo "(...)"; ls -al | tail -8'             \
+   'ls -a '"$TESTDIR1"' ; echo ":::::::::" ; ls -aF '"$TESTDIR1"   \
+   'cat   '"$TESTDIR1"'/program2.c'                                \
+   'cd    '"$TESTDIR1"' ; cat file1.txt ; echo "::::" ; cat file2.txt ; cd ..' \
+   'cd    '"$TESTDIR1"' ; diff file1.txt file2.txt ; cd ..' \
+   'cd    '"$TESTDIR1"' ; sort file1.txt ; cd ..' \
+   'pushd '"$TESTDIR1"' ; wc file1.txt ; wc -l file1.txt ; wc -c file1.txt;popd'\
+   'date'     \
    'date +%y' \
    'date +%Y' \
    'date +%d\ %b\ %Y\ at\ %H:%M:%S;echo "::::";date "+%d %b %Y at %H:%M:%S"' \
@@ -50,7 +50,7 @@ for II in      \
    'printf "ARG1=[%s]-- ARG2=[%s] -- ARG3=[%s] -- ARG4=[%s]\n" $1 $2 $3 $4'\
    'function dummy { printf "BASH PID = %s\n" $$ ; return 99 ; } ; ' \
    'dummy ; printf "Return value = %s\n" $? ' \
-   'function doawk { awk -f .TESTFROM/file.awk /etc/passwd ; } ; ' \
+   'function doawk { awk -f '"$TESTDIR1"'/file.awk /etc/passwd ; } ; ' \
    'doawk | head -6 ; echo "(...)" ; doawk | tail -6 ; ' \
    'time (echo -n "DELAY 3 seconds..";sleep 1;echo -n "..";sleep 1;echo -n "..";sleep 1;echo ".. DONE")' \
    '/bin/bash --version' \

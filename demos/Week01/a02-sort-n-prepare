@@ -1,5 +1,5 @@
 #!/bin/bash
-# REV12: Thu Feb 22 09:32:16 WIB 2018
+# REV13: Mon Feb 26 21:08:34 WIB 2018
 # REV01: Mon Jun 26 21:48:52 WIB 2017
 # START: Mon Feb 13 20:22:22 WIB 2017
 
@@ -25,18 +25,18 @@ echo "bash $0 xx (... for total reset)"
 echo "Check and compare with:"
 echo "ls -al"
 echo "Do also:"
-echo "bash a01-README"
+echo "bash a01-READ-ME"
 echo "================================================="
 
 HEAD="a" 
 TMPHEAD="ZTMP"
 START="0"
 TMPSEQ="1000"
-TESTDIR1=".TESTFROM"
-TESTDIR2=".TESTBACKUP"
+TMPFILE="ZA-thisfile.tx"
+TESTDIR1="ZB-SOURCE"
+TESTDIR2="ZC-BACKUP"
 AWKPROG="$TESTDIR1/file.awk"
 CPROGRAM="$TESTDIR1/program2.c"
-TMPFILE=".thisfile.tx"
 FILE1="$TESTDIR1/file1.txt"
 FILE2="$TESTDIR1/file2.txt"
 FILE3="$TESTDIR1/80x23.txt"

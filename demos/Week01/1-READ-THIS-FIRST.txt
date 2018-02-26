@@ -1,8 +1,8 @@
 exit
-DO NOT work inside this folder!
-You should copy this folder to your own working folder.
 This demo is available in badak:///extra/.
 See also: https://github.com/UI-FASILKOM-OS/os181.
+You should copy this folder to your own working folder.
+DO NOT work inside this folder!
 =======================================================
 
 Folder Name:

@@ -1,5 +1,5 @@
 #!/bin/bash
-# REV09: Mon Feb 26 21:08:50 WIB 2018
+# REV10: Tue Feb 27 09:22:52 WIB 2018
 # START: Mon Sep  5 11:12:35 WIB 2016
 
 # R: These are collections of command lines. Run "bash a03-command-lines-demo 11 22 33 44 55"
@@ -52,8 +52,12 @@ for II in      \
    'dummy ; printf "Return value = %s\n" $? ' \
    'function doawk { awk -f '"$TESTDIR1"'/file.awk /etc/passwd ; } ; ' \
    'doawk | head -6 ; echo "(...)" ; doawk | tail -6 ; ' \
-   'time (echo -n "DELAY 3 seconds..";sleep 1;echo -n "..";sleep 1;echo -n "..";sleep 1;echo ".. DONE")' \
    '/bin/bash --version' \
+   'URL="https://raw.githubusercontent.com/rms46/os181/master/README.md"; echo $URL' \
+   'curl -s $URL ; echo "============" ; curl -s $URL | grep "^ZCZC W01"
+
+' \
+   'time (echo -n "DELAY 3 seconds..";sleep 1;echo -n "..";sleep 1;echo -n "..";sleep 1;echo ".. DONE")' \
 
 do
     COMMENT="RUNNING:  $II"

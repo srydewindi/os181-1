@@ -1,8 +1,10 @@
 /*
- * (c) 2013-2017 Rahmat M. Samik-Ibrahim
+ * Copyright (C) 2013-2018 Rahmat M. Samik-Ibrahim
  * http://rahmatm.samik-ibrahim.vlsm.org/
- * This is free software.
- * REV00 Mon Sep 18 09:47:49 WIB 2017
+ * This program is free script/software. This program is distributed in the 
+ * hope that it will be useful, but WITHOUT ANY WARRANTY; without even the 
+ * implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * REV01 Tue Feb 27 09:19:16 WIB 2018
  * START 2013
  */
 
@@ -10,7 +12,7 @@
 #include <sys/types.h>
 #include <unistd.h>
 
-void main() {
+void main(void) {
    printf("Process Identifier (PID) [%5.5d] -- Perent PID (PPID[%5.5d])\n", getpid(), getppid());
    sleep(1);
 }

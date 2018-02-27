@@ -1,8 +1,10 @@
 /*
- * (c) 2013-2017 Rahmat M. Samik-Ibrahim
+ * Copyright (C) 2013-2018 Rahmat M. Samik-Ibrahim
  * http://rahmatm.samik-ibrahim.vlsm.org/
- * This is free software.
- * REV00 Mon Sep 18 09:46:24 WIB 2017
+ * This program is free script/software. This program is distributed in the 
+ * hope that it will be useful, but WITHOUT ANY WARRANTY; without even the 
+ * implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * REV01 Tue Feb 27 09:18:36 WIB 2018
  * START 2013
  */
 
@@ -10,7 +12,7 @@
 #include <stdio.h> 
 #include <stdlib.h> 
 
-void main() { 
+void main(void) { 
    int ii; 
    char buf[10];
    printf("Silakan isi: ");

@@ -10,8 +10,6 @@ START Mon Oct  3 11:47:46 WIB 2016
 * Arrange "top" until it display only:
   PID, PPID, %MEM, VIRT, RES, SHR, SWAP, CODE, DATA, USED.
 * Do not forget to save the configuration by using "W" into "~/.toprc"
-* Create folder "work05/"
-* Copy program "06-memory.c" and "Makefile".
 * Make program 06-memory 
 * Run program 06-memory > 07-result.txt
 

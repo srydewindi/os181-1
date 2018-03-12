@@ -8,13 +8,13 @@
  * START Mon Oct  3 09:26:51 WIB 2016
  */
 
-#define MSIZE0 0x1
-#define MSIZE1 0x10000
-#define MSIZE2 0x50000
-#define MSIZE3 0x1000000
-#define MSIZE4 0x1000000
-#define MSIZE5 0x10000000
-#define MSIZE6 0x10000000
+#define MSIZE0 0x10000
+#define MSIZE1 0x10008
+#define MSIZE2 0x10009
+#define MSIZE3 0x1000A
+#define MSIZE4 0x10010
+#define MSIZE5 0xA0000
+#define MSIZE6 0x100000
 #define MSIZE7 0x10000000
 #define MSIZE8 0x10000000
 #define MSIZE9 0x10000000
@@ -23,6 +23,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <string.h>
 #include <sys/types.h>
 
 void printLine(int line) {
@@ -44,7 +45,8 @@ void main (void) {
    sprintf(strSYS1, "top -b -n 1 -p%d | tail -1", myPID);
    for (ii=0; ii< (sizeof(msize)/sizeof(int)); ii++){
       chrStr = malloc(msize[ii]);
-      fgets(strOUT, sizeof(strOUT)-2, popen(strSYS1, "r"));
+      fgets(strOUT, sizeof(strOUT)-1, popen(strSYS1, "r"));
+      strOUT[(int) strlen(strOUT)-1]='\0';
       printf("%s [%X]\n", strOUT, msize[ii]);
       free(chrStr);
    }

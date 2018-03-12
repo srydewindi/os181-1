@@ -1,4 +1,4 @@
-REV01 Mon Mar 12 15:36:32 WIB 2018
+REV01 Mon Mar 12 19:59:22 WIB 2018
 START Mon Oct  3 11:47:46 WIB 2016
 (c) 2016 Rahmat M. Samik-Ibrahim -- This is a free document.
 ============================================================
@@ -12,7 +12,7 @@ START Mon Oct  3 11:47:46 WIB 2016
 ** Hit "f" for Field Management: SPACE=ON/OFF; Right Arrow: Set Move
 ** Hit "w" to write a new "~/.toprc" file
 * Arrange "top" until it display only:
-  PID, PPID, %MEM, VIRT, RES, SHR, SWAP, CODE, DATA, USED, nDRT.
+  PID, VIRT, RES, SHR, SWAP, CODE, DATA, USED, nDRT.
 * Do not forget to save the configuration by using "W" into "~/.toprc"
 * Make program 06-memory 
 * Run program 06-memory > 07-result.txt

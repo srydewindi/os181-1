@@ -12,12 +12,12 @@
 #define MSIZE1 0x10008
 #define MSIZE2 0x10009
 #define MSIZE3 0x1000A
-#define MSIZE4 0x10010
-#define MSIZE5 0xA0000
-#define MSIZE6 0x100000
-#define MSIZE7 0x10000000
-#define MSIZE8 0x10000000
-#define MSIZE9 0x10000000
+#define MSIZE4 0x20978
+#define MSIZE5 0x20979
+#define MSIZE6 0x2097A
+#define MSIZE7 0xF0000
+#define MSIZE8 0x10000
+#define MSIZE9 0x1000
 #define LINE   75
 #define MAXSTR 80
 #include <stdio.h>
@@ -33,11 +33,13 @@ void printLine(int line) {
 }
 
 void main (void) {
-   int   msize[]    = {MSIZE0, MSIZE1, MSIZE2, MSIZE3, MSIZE4, 
-                       MSIZE5, MSIZE6, MSIZE7, MSIZE8, MSIZE9};
-   int   ii, myPID  = (int) getpid();
+   int   msize[] = {MSIZE0, MSIZE1, MSIZE2, MSIZE3, MSIZE4, 
+                    MSIZE5, MSIZE6, MSIZE7, MSIZE8, MSIZE9};
+   int   ii, jj;
+   int   myPID   = (int) getpid();
    char  strSYS1[MAXSTR], strOUT[MAXSTR];
-   char* chrStr     = strSYS1;
+   char* chrStr  = strSYS1;
+   char* chrPTR; 
 
    printLine(LINE);
    sprintf(strSYS1, "top -b -n 1 -p%d | tail -5", myPID);
@@ -50,32 +52,14 @@ void main (void) {
       printf("%s [%X]\n", strOUT, msize[ii]);
       free(chrStr);
    }
+   for (ii=0; ii< (sizeof(msize)/sizeof(int)); ii++){
+      chrPTR = chrStr = malloc(msize[ii]);
+      for (jj=0;jj<msize[ii];jj++)
+         *chrPTR++='x';
+      fgets(strOUT, sizeof(strOUT)-1, popen(strSYS1, "r"));
+      strOUT[(int) strlen(strOUT)-1]='\0';
+      printf("%s [%X]\n", strOUT, msize[ii]);
+      free(chrStr);
+   }
 }
 
-//
-//   chrStr = malloc(MSIZE1);
-//   system(strSYS2);         /* (3) */
-//   free(chrStr);
-//   chrStr = malloc(MSIZE2);
-//   system(strSYS2);         /* (4) */
-//   free(chrStr);
-//   chrStr = malloc(MSIZE3);
-//   system(strSYS2);         /* (5) */
-//   free(chrStr);
-//   chrStr = malloc(MSIZE4);
-//   for (ii = 0; ii < MSIZE4; ii++) {
-//      chrStr[ii]='a';
-//   }
-//   system(strSYS2);         /* (6) */
-//   free(chrStr);
-//   chrStr = malloc(MSIZE5);
-//   system(strSYS2);         /* (7) */
-//   free(chrStr);
-//   chrStr = malloc(MSIZE0);
-//   for (ii = 0; ii < MSIZE0; ii++) {
-//      chrStr[ii]='a';
-//   }
-//   system(strSYS2);         /* (8) */
-//   free(chrStr);
-//   printLine(LINE);
-//

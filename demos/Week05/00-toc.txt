@@ -1,4 +1,4 @@
-REV00 Mon Oct  3 13:27:01 WIB 2016
+REV01 Mon Mar 12 15:36:32 WIB 2018
 START Mon Oct  3 11:47:46 WIB 2016
 (c) 2016 Rahmat M. Samik-Ibrahim -- This is a free document.
 ============================================================
@@ -14,7 +14,4 @@ START Mon Oct  3 11:47:46 WIB 2016
 * Copy program "06-memory.c" and "Makefile".
 * Make program 06-memory 
 * Run program 06-memory > 07-result.txt
-* Give comments in "08-comments.txt"
-* Make a tarbal of folder "work05/"
-* Encrypt and submit it.
 

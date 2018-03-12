@@ -1,17 +1,23 @@
 /*
- * (c) 2016-2017 Rahmat M. Samik-Ibrahim
+ * Copyright (C) 2016-2018 Rahmat M. Samik-Ibrahim
  * http://rahmatm.samik-ibrahim.vlsm.org/
- * This is free software.
- * REV02 Tue Oct 10 11:29:05 WIB 2017
+ * This program is free script/software. This program is distributed in the 
+ * hope that it will be useful, but WITHOUT ANY WARRANTY; without even the 
+ * implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ * REV04 Mon Mar 12 17:33:30 WIB 2018
  * START Mon Oct  3 09:26:51 WIB 2016
  */
 
+#define MSIZE0 0x1
 #define MSIZE1 0x10000
-#define MSIZE2 0x20000
-#define MSIZE3 0x50000
-#define MSIZE4 0x100000
-#define MSIZE5 0x1000000
+#define MSIZE2 0x50000
+#define MSIZE3 0x1000000
+#define MSIZE4 0x1000000
+#define MSIZE5 0x10000000
 #define MSIZE6 0x10000000
+#define MSIZE7 0x10000000
+#define MSIZE8 0x10000000
+#define MSIZE9 0x10000000
 #define LINE   75
 #define MAXSTR 80
 #include <stdio.h>
@@ -26,41 +32,48 @@ void printLine(int line) {
 }
 
 void main (void) {
-   char  strSYS2[MAXSTR], strSYS1[MAXSTR];
-   char* chrStr = &strSYS1[0];
-   int   ii, myPID  = getpid();
-   sprintf(strSYS2, "top -b -n 1 -p%d | tail -5", myPID);
+   int   msize[]    = {MSIZE0, MSIZE1, MSIZE2, MSIZE3, MSIZE4, 
+                       MSIZE5, MSIZE6, MSIZE7, MSIZE8, MSIZE9};
+   int   ii, myPID  = (int) getpid();
+   char  strSYS1[MAXSTR], strOUT[MAXSTR];
+   char* chrStr     = strSYS1;
+
+   printLine(LINE);
+   sprintf(strSYS1, "top -b -n 1 -p%d | tail -5", myPID);
+   system (strSYS1);
    sprintf(strSYS1, "top -b -n 1 -p%d | tail -1", myPID);
-   printf("MSIZE1 (10k) MSIZE2 (20k) MSIZE3 (50k) MSIZE4 (100k) MSIZE5 (1M) MSIZE6 (10M) MSIZE1\n");
-   printLine(LINE);
-   system(strSYS2);         /* (1) */
-   chrStr = malloc(MSIZE1);
-   system(strSYS1);         /* (2) */
-   free(chrStr);
-   chrStr = malloc(MSIZE2);
-   system(strSYS1);         /* (3) */
-   free(chrStr);
-   chrStr = malloc(MSIZE3);
-   system(strSYS1);         /* (4) */
-   free(chrStr);
-   chrStr = malloc(MSIZE4);
-   system(strSYS1);         /* (5) */
-   free(chrStr);
-   chrStr = malloc(MSIZE5);
-   for (ii = 0; ii < MSIZE5; ii++) {
-      chrStr[ii]='a';
+   for (ii=0; ii< (sizeof(msize)/sizeof(int)); ii++){
+      chrStr = malloc(msize[ii]);
+      fgets(strOUT, sizeof(strOUT)-2, popen(strSYS1, "r"));
+      printf("%s [%X]\n", strOUT, msize[ii]);
+      free(chrStr);
    }
-   system(strSYS1);         /* (6) */
-   free(chrStr);
-   chrStr = malloc(MSIZE6);
-   system(strSYS1);         /* (7) */
-   free(chrStr);
-   chrStr = malloc(MSIZE1);
-   for (ii = 0; ii < MSIZE1; ii++) {
-      chrStr[ii]='a';
-   }
-   system(strSYS1);         /* (8) */
-   free(chrStr);
-   printLine(LINE);
 }
 
+//
+//   chrStr = malloc(MSIZE1);
+//   system(strSYS2);         /* (3) */
+//   free(chrStr);
+//   chrStr = malloc(MSIZE2);
+//   system(strSYS2);         /* (4) */
+//   free(chrStr);
+//   chrStr = malloc(MSIZE3);
+//   system(strSYS2);         /* (5) */
+//   free(chrStr);
+//   chrStr = malloc(MSIZE4);
+//   for (ii = 0; ii < MSIZE4; ii++) {
+//      chrStr[ii]='a';
+//   }
+//   system(strSYS2);         /* (6) */
+//   free(chrStr);
+//   chrStr = malloc(MSIZE5);
+//   system(strSYS2);         /* (7) */
+//   free(chrStr);
+//   chrStr = malloc(MSIZE0);
+//   for (ii = 0; ii < MSIZE0; ii++) {
+//      chrStr[ii]='a';
+//   }
+//   system(strSYS2);         /* (8) */
+//   free(chrStr);
+//   printLine(LINE);
+//
